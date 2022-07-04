@@ -15,6 +15,10 @@ a {
   color: var(--primary);
 }
 
+ul li {
+  list-style: none;
+}
+
 /* fonts */
 @font-face {
   font-family: "Krisha";
@@ -27,6 +31,10 @@ a {
 }
 
 /* base style */
+header {
+  padding: 40px;
+}
+
 header nav > *,
 p {
   font-family: "Share Tech";
@@ -37,6 +45,10 @@ p {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--primary);
+}
+
+main {
+  overflow: hidden;
 }
 
 main h2 {
@@ -53,7 +65,57 @@ img {
 
 .flex {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 
 /* mobile style */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, [col-start] 1fr);
+  align-items: start;
+}
+
+header nav > h1 {
+  grid-column: col-start 1 / col-start 3;
+  justify-self: start;
+}
+
+header nav > .cta {
+  grid-column: col-start 3 / col-start 5;
+  justify-self: end;
+}
+
+.links {
+  display: none;
+}
+
+.cta > a {
+  flex-shrink: 0;
+}
+
+main h2 {
+  font-size: 8.125rem;
+}
+
+main > h2,
+main > .image {
+  grid-column: col-start / col-start 5;
+  justify-self: center;
+}
+
+main .button,
+.social__media__links {
+  padding: 40px;
+  align-self: center;
+}
+
+main .button {
+  grid-column: col-start / col-start 2;
+  justify-self: start;
+}
+
+main .social__media__links {
+  grid-column: col-start 3 / col-start 5;
+  justify-self: end;
+}
