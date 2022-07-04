@@ -1,1 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+/* resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Krisha";
+  src: url(./assets/fonts/Krisha-Regular.otf);
+}
+
+@font-face {
+  font-family: "Share Tech";
+  src: url(https://fonts.googleapis.com/css2?family=Share+Tech&display=swap);
+}
+
+/* variables */
+:root {
+  --primary: #000000;
+}
+
+/* base style */
+/* mobile style */
