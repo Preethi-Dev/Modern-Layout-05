@@ -1,3 +1,6 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
 /* resets */
 *,
 *::before,
@@ -9,6 +12,7 @@
 
 a {
   text-decoration: none;
+  color: var(--primary);
 }
 
 /* fonts */
@@ -17,15 +21,39 @@ a {
   src: url(./assets/fonts/Krisha-Regular.otf);
 }
 
-@font-face {
-  font-family: "Share Tech";
-  src: url(https://fonts.googleapis.com/css2?family=Share+Tech&display=swap);
-}
-
 /* variables */
 :root {
   --primary: #000000;
 }
 
 /* base style */
+header nav > *,
+p {
+  font-family: "Share Tech";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+main h2 {
+  font-family: "Krisha";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
 /* mobile style */
